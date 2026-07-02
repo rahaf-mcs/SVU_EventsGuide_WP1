@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفعاليات | دليل فعاليات الجامعة</title>
+
+    <link rel="icon" type="image/png" href="assets/img/SVU Logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <section class="event-details-page py-5">
+    
+        <div class="container">
+    
+            <div class="sticky-back-box mb-4">
+                <a href="events.html" class="btn btn-outline-primary back-events-btn">
+                    <i class="bi bi-arrow-right"></i>
+                    العودة إلى الفعاليات
+                </a>
+            </div>
+    
+            <div class="row g-4">
+    
+                <div class="col-lg-8">
+    
+                    <div class="event-hero">
+    
+                        <img id="eventImage" class="event-hero-img" alt="صورة الفعالية">
+    
+                        <div class="event-content">
+    
+                            <span id="eventCategory" class="badge bg-primary mb-3"></span>
+    
+                            <h1 id="eventTitle"></h1>
+    
+                            <div class="event-meta">
+                                <div class="event-meta-item">
+                                    <i class="bi bi-calendar-event"></i>
+                                    <span id="eventDate"></span>
+                                </div>
+    
+                                <div class="event-meta-item">
+                                    <i class="bi bi-clock"></i>
+                                    <span id="eventTime"></span>
+                                </div>
+    
+                                <div class="event-meta-item">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span id="eventLocation"></span>
+                                </div>
+                            </div>
+    
+                            <div class="mt-4">
+                                <h4 class="event-section-title">وصف الفعالية</h4>
+                                <p id="eventDescription" class="event-description"></p>
+                            </div>
+    
+                            <div class="event-actions">
+    
+                                <button id="addToCalendarBtn" class="btn btn-primary">
+                                    <i class="bi bi-calendar-plus"></i>
+                                    أضف للتقويم
+                                </button>
+    
+                                <div class="share-wrapper">
+                                    <button id="shareBtn" class="btn btn-outline-primary">
+                                        <i class="bi bi-share"></i>
+                                        مشاركة
+                                    </button>
+    
+                                    <div id="shareMenu" class="share-menu">
+                                        <a id="shareWhatsapp" target="_blank">واتساب</a>
+                                        <a id="shareFacebook" target="_blank">فيسبوك</a>
+                                        <a id="shareX" target="_blank">X</a>
+                                        <a id="shareInstagram" target="_blank">إنستغرام</a>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="event-gallery mt-5">
+                        <h4 class="event-section-title">معرض الصور</h4>
+                        <div id="galleryContainer" class="row g-3"></div>
+                    </div>
+    
+                </div>
+    
+                <div class="col-lg-4">
+    
+                    <div class="event-side-card">
+                        <h4 class="event-section-title">موقع الفعالية</h4>
+                        <img id="eventMap" class="event-map-img" alt="خريطة الفعالية">
+                    </div>
+    
+                    <div class="event-side-card">
+                        <h4 class="event-section-title">فعاليات ذات صلة</h4>
+                        <div id="relatedEvents"></div>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    <button id="backToTopBtn" class="back-to-top">
+        ↑
+    </button>
+    <script src="assets/js/main.js"></script>
+    
+    </body>
