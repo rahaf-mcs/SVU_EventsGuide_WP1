@@ -45,31 +45,23 @@
     <div class="row g-4">
 
         <div class="col-md-6 col-lg-3">
-          <div class="event-card">
-             <form action="action_page.php">
+          <div class="event-card" >
+             <form action="contact.php" method="post">
 
-               <label for="fname"> :   الاسم الأول</label>
-               <input type="text" id="fname" name="firstname" placeholder="اسمك الأول .."><br/><br/>
-               
-               <label for="lname">  :  الاسم الأخير</label>
-               <input type="text" id="lname" name="lastname" placeholder="اسمك الأخير.."><br/><br/>
-               
-               <label for="lname"> : البريد الإلكتروني</label>
+               <label for="fname"> الاسم الكامل : </label>
+               <input type="text" id="fname" name="fullname" placeholder="اسمك الكامل .."><br/><br/>
+
+               <label for="language">  اللغة :</label>
+               <input type="checkbox" id="language" name="language" value="Arabic"><label for="language"> العربية</label>
+               <input type="checkbox" id="language" name="language" value="English"><label for="language"> الإنجليزية</label><br/><br/>
+
+               <label for="email"> البريد الإلكتروني: </label>
                <input type="email" id="email" name="email" placeholder="بريدك الإلكتروني.."><br/><br/>
-               
-                <label for="country">    :  البلد</label>
-                <select id="country" name="country">
-                <option value="Syria" selected>سوريا</option>
-                <option value="Saudi">السعودية</option>
-                <option value="Jordan">الأردن</option>
-                <option value="Egypt">مصر</option>
-                <option value="Lebanon">لبنان</option>
-                </select><br/><br/>
    
-                <label for="subject">   :   الموضوع</label>
+                <label for="subject">الموضوع : </label>
                 <textarea id="subject" name="subject" placeholder="اكتب الرسالة.." style="height:200px"></textarea><br/><br/>
 
-                <input type="submit" value="إرسال ">
+                <input type="button" value="إرسال " onclick="alert('تم إرسال رسالتك بنجاح!')"><br/><br/>
 
             </form>
             </div>
